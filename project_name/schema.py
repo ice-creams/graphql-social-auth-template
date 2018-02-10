@@ -19,4 +19,4 @@ class Query(graphene.ObjectType):
     users = graphene.List(UserType)
 
 
-schema = graphene.Schema(query=Query, mutations=Mutations)
+schema = graphene.Schema(query=Query, mutation=Mutations)
