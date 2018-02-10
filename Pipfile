@@ -1,0 +1,17 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+Django = "==2.0.2"
+django-environ = "==0.4.4"
+graphene-django = "==2.0.0"
+django-graphql-social-auth = "==0.0.3"
+
+[requires]
+
+python_version = "3.6"
