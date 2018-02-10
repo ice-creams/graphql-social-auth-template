@@ -1,0 +1,14 @@
+*.*~
+*.db
+*.DS_Store
+*.box
+*.cer
+*.log
+*.mo
+*.pem
+*.p12
+*.pyc
+*.sql
+*.xls
+
+/db.sqlite3
