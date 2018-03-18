@@ -133,6 +133,8 @@ GRAPHENE = {
 # Social Auth
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
+    'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.facebook.FacebookOAuth2',
     'social_core.backends.twitter.TwitterOAuth',
 ]
 
@@ -182,5 +184,14 @@ SOCIAL_AUTH_PIPELINE = [
 ]
 
 
-SOCIAL_AUTH_TWITTER_KEY = env('SOCIAL_AUTH_TWITTER_KEY')
-SOCIAL_AUTH_TWITTER_SECRET = env('SOCIAL_AUTH_TWITTER_SECRET')
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY =\
+     env('SOCIAL_AUTH_GOOGLE_OAUTH2_KEY', default='')
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET =\
+    env('SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET', default='')
+
+SOCIAL_AUTH_FACEBOOK_KEY = env('SOCIAL_AUTH_FACEBOOK_KEY', default='')
+SOCIAL_AUTH_FACEBOOK_SECRET = env('SOCIAL_AUTH_FACEBOOK_SECRET', default='')
+
+SOCIAL_AUTH_TWITTER_KEY = env('SOCIAL_AUTH_TWITTER_KEY', default='')
+SOCIAL_AUTH_TWITTER_SECRET = env('SOCIAL_AUTH_TWITTER_SECRET', default='')
